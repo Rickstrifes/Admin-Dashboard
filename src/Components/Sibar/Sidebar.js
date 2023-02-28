@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, NavLink } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import House from '../../Assets/House.png';
 import truk from '../../Assets/truk.png';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -20,7 +21,7 @@ const Sidebar = () => {
       <Container fluid>
         <Row xs={1}>
           <Col className="text-center">
-            <NavLink style={{
+            <Link style={{
               backgroundColor: "#CFD4ED",
               display: "flex",
               flexDirection: "column",
@@ -30,22 +31,24 @@ const Sidebar = () => {
               height: 34,
               margin: "18px auto"
             }}>
-            </NavLink>
+            </Link>
           </Col>
           <Col className="text-center mt-2">
-            <NavLink className="d-flex flex-column align-items-center">
+            <Link to="/" className="d-flex flex-column align-items-center"
+              style={{ textDecoration: "none" }}>
               <img src={House} alt="House" />
               <span className="mt-1 text-white" style={{
                 fontFamily: "Arial",
                 fontStyle: "normal",
                 fontWeight: 700,
                 fontSize: 12,
-                textAlign: "center"
+                textAlign: "center",
               }}>Dashboard</span>
-            </NavLink>
+            </Link>
           </Col>
           <Col className="text-center mt-3">
-            <NavLink className="d-flex flex-column align-items-center">
+            <Link to="/list" className="d-flex flex-column align-items-center"
+              style={{ textDecoration: "none" }}>
               <img src={truk} alt="truk" />
               <span className="mt-1 text-white" style={{
                 fontFamily: "Arial",
@@ -53,7 +56,7 @@ const Sidebar = () => {
                 textAlign: "center",
                 fontWeight: 600
               }}>Cars</span>
-            </NavLink>
+            </Link>
           </Col>
         </Row>
       </Container>

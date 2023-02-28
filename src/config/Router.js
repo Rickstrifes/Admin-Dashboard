@@ -1,10 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 import RenderLayout from "./RenderLayout";
-import Canvas from "../Components/Dashboardlist/Canvas";
+import CanvasDashboard from "../Components/Dashboardlist/CanvasDashboard";
+import Login from "../pages/login/Login";
+import CanvasCar from "../Components/Dashboardlist/CanvasCar";
 
 export const Router = createBrowserRouter([
     {
         path: "/",
-        element: <RenderLayout children={[<Canvas />]} />
+        element: <RenderLayout children={[<CanvasDashboard />]} />
+    },
+    {
+        path: "/list",
+        element: <RenderLayout children={[<CanvasCar />]} />
+    },
+    {
+        path: "/SignIn",
+        element: <Login />
     }
 ]);
