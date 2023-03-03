@@ -3,14 +3,15 @@ import Navigation from '../Components/Nav/Navigation';
 import Sidebar from '../Components/Sibar/Sidebar';
 
 
-const RenderLayout = ({children}) => {
+
+const RenderLayout = ({ children }) => {
     return (
         <>
-        <Navigation />
-        {children}
-        <Sidebar />
+            <Navigation />
+            {children}
+            <Sidebar />
         </>
-    )
+    )   
 }
 
 export default RenderLayout

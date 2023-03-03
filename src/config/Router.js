@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import RenderLayout from "./RenderLayout";
-import CanvasDashboard from "../Components/Dashboardlist/CanvasDashboard";
 import Login from "../Pages/login/Login";
 import CanvasCar from "../Components/Dashboardlist/CanvasCar";
+import ReportTable from "../Pages/DashboardContent/ReportTable";
+import CanvasDashboard from '../Components/Dashboardlist/CanvasDashboard';
 
 export const Router = createBrowserRouter([
     {
         path: "/",
-        element: <RenderLayout children={[<CanvasDashboard />]} />
+        element: <RenderLayout children={[<CanvasDashboard />, <ReportTable />]} />
     },
     {
         path: "/list",

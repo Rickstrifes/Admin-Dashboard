@@ -11,7 +11,7 @@ const Canvas = () => {
             marginLeft: '70px',
             borderRight: '1px solid grey',
             marginTop: 75,
-            position: "fixed"
+            position: "fixed",
         }}>
             <Row>
                 <Col style={{ marginTop: 20, marginLeft: 15 }}>
