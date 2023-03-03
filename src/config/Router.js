@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import RenderLayout from "./RenderLayout";
-import Login from "../Pages/login/Login";
+import SignIn from "../pages/SignIn/SignIn";
 import CanvasCar from "../Components/Dashboardlist/CanvasCar";
-import ReportTable from "../Pages/DashboardContent/ReportTable";
+import ReportTable from "../pages/DashboardContent/ReportTable";
 import CanvasDashboard from '../Components/Dashboardlist/CanvasDashboard';
+import AddCar from "../Components/Cars/AddCar";
 
 export const Router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ export const Router = createBrowserRouter([
     },
     {
         path: "/SignIn",
-        element: <Login />
+        element: <SignIn />
+    },
+    {
+        path: "/AddCar",
+        element: <RenderLayout children={[<AddCar />]} />
     }
 ]);

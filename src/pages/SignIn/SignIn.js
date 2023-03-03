@@ -3,7 +3,7 @@ import './styles.css'
 import Background from '../../Assets/image 2.png';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const SignIn = () => {
 
     return (
         <section id='loginSection'>
@@ -49,4 +49,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default SignIn
