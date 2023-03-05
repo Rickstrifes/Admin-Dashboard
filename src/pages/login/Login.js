@@ -40,7 +40,7 @@ const Login = () => {
                                     placeholder='Masukkan Password'
                                 />
                             </div>
-                            <Link to="/" type='submit' className='btn btn-primary mt-3' style={{ width: 373 }}>Sign In</Link>
+                            <Link to="/Dashboard" type='submit' className='btn btn-primary mt-3' style={{ width: 373 }}>Sign In</Link>
                         </form>
                     </div>
                 </div>
