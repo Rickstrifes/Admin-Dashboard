@@ -1,18 +1,18 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const CanvasCar = () => {
+const sidebarDash = () => {
   return (
     <Container
       fluid
       style={{
         backgroundColor: '#ffffff',
-        width: 250,
+        width: 200,
         height: '100vh',
         alignItems: 'flex-start',
-        marginLeft: '70px',
+        marginRight: '1020px',
+        marginBottom: 695,
         borderRight: '1px solid grey',
-        marginTop: 75,
         position: 'fixed',
       }}
     >
@@ -25,7 +25,7 @@ const CanvasCar = () => {
               fontSize: 14,
             }}
           >
-            Cars
+            Dashboard
           </span>
         </Col>
       </Row>
@@ -37,7 +37,7 @@ const CanvasCar = () => {
               fontSize: 14,
             }}
           >
-            List Car
+            Dashboard
           </span>
         </Col>
       </Row>
@@ -45,4 +45,4 @@ const CanvasCar = () => {
   );
 };
 
-export default CanvasCar;
+export default sidebarDash;

@@ -15,7 +15,7 @@ const ReportTable = () => {
     axios
       .get(`${url}/admin/v2/order`, config)
       .then((res) => {
-        setOrders(res.data.orders); // menyimpan data order dari response API ke dalam state
+        setOrders(res.data.orders);
       })
       .catch((error) => {
         console.log(error);
